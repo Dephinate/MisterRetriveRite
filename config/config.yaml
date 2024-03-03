@@ -1,0 +1,16 @@
+artifacts_root: artifacts
+
+data_Loader: None
+
+vectorization:
+  root_dir: artifacts/vector_db
+  encoder_name: all-mpnet-base-v2
+  model_ckpt: None
+  data_path: None
+
+model:
+  model: gpt-3.5-turbo-instruct
+
+
+
+
