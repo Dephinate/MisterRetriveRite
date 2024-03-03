@@ -10,6 +10,7 @@ from box import ConfigBox
 from box.exceptions import BoxValueError
 from ensure import ensure_annotations
 import yaml
+from misterRetriveRite.logging import logger
 
 @ensure_annotations
 def read_yaml(path_to_yaml: Path)-> ConfigBox:
@@ -36,6 +37,12 @@ def create_directory(path_to_directories: list, verbose = True):
     
 @ensure_annotations
 def create_file(file_names: list, verbose = True):
-    for file in file_names:
-        with open(file,'w') as f:
-            pass
+    try:
+        for file in file_names:
+            with open(file,'w') as f:
+                pass
+            if verbose:
+                    logger.info(f"created file : {file}")
+    
+    except Exception as e:
+        raise e
