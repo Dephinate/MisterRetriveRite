@@ -1,0 +1,36 @@
+End-to-end NLP project
+
+Tech Used:
+LangChain
+OpenAI
+Streamlit
+
+
+Why not Just use ChatGpt?
+1) Copying paste articles is tedious
+2) An aggregate database is required. An anlyst might have lots of resources to refer. Some information will be spread over multiple articles. Also ChatGpt is a product and some information will be confidential.
+3) ChatGpt's word limit of 3000 words. It is better to break up large text into chunks and then feed that to the llm model. If we can somehow figure out the relevant chunk of text and then give it to llm it will save cost and reduce response time.
+
+
+Technical Architecture
+1) Data Ingestion
+2) Splitting
+3) Vector DB
+4) Retrival
+5) LLM
+
+POC Architecture
+1) Documnets
+2) Splitting
+3) Vector DB
+4) Retrival
+5) Prompt
+6) UI
+
+
+Requirements
+1) pip install langchain
+
+
+Embedding + Vector DB
+Text is embedded in vector space such that similar text are closer and can efficiently be found using cosine similarity.
