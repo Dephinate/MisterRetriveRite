@@ -17,7 +17,7 @@ logging.basicConfig( # basicConfig configures the logging system
     format='[%(asctime)s]: %(message)s:'
     )
 
-project_name = "TextSummarizer"
+project_name = "misterRetriveRite"
 
 # Declare a list of driectrories and files
 
