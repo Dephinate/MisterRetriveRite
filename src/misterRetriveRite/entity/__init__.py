@@ -17,3 +17,7 @@ class ModelConfig:
     model_name: str
     temperature: int
     max_tokens: int
+    chunk_size: int
+    chunk_overlap: int
+
+
