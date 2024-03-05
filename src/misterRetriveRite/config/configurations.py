@@ -1,5 +1,5 @@
 from misterRetriveRite.constants import  *
-from misterRetriveRite.entity import VectorizationConfig, ModelConfig, SpltterConfig
+from misterRetriveRite.entity import VectorizationConfig, ModelConfig
 from misterRetriveRite.utils.common import read_yaml, create_directory, create_file
 
 class ConfigurationManager:
@@ -10,6 +10,7 @@ class ConfigurationManager:
         self.params = read_yaml(param_filepath)
 
         create_directory([self.config.artifacts_root])
+        
 
     def get_vectorization_config(self)->VectorizationConfig:
         config = self.config.vectorization
@@ -22,7 +23,7 @@ class ConfigurationManager:
             model_ckpt = config.model_ckpt,
             data_path = config.data_path,
             k = params.k,
-            num_of_cell = params.num_of_cells,
+            num_of_cells = params.num_of_cells,
             nprobe = params.nprobe  
         )
         return vectorizationConfig
