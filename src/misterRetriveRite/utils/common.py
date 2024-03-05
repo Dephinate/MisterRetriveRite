@@ -11,6 +11,7 @@ from box.exceptions import BoxValueError
 from ensure import ensure_annotations
 import yaml
 from misterRetriveRite.logging import logger
+import pickle
 
 @ensure_annotations
 def read_yaml(path_to_yaml: Path)-> ConfigBox:
@@ -44,5 +45,25 @@ def create_file(file_names: list, verbose = True):
             if verbose:
                     logger.info(f"created file : {file}")
     
+    except Exception as e:
+        raise e
+    
+
+@ensure_annotations
+def pickel_dump(file_path:str,data):
+    try:
+        with open(file_path,"wb") as f:
+            pickle.dump(data,f)
+            logger.info(f"created file at : {file_path}")
+    except Exception as e:
+        raise e
+
+@ensure_annotations
+def pickel_load(file_path:str):
+    try:
+        if os.path.exists(file_path):
+            with open(file_path, "rb") as f:
+                file_data = pickle.load(f)
+                return file_data
     except Exception as e:
         raise e
