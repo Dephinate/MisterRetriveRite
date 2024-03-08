@@ -12,6 +12,7 @@ from ensure import ensure_annotations
 import yaml
 from misterRetriveRite.logging import logger
 import pickle
+from dotenv import load_dotenv
 
 @ensure_annotations
 def read_yaml(path_to_yaml: Path)-> ConfigBox:
@@ -67,3 +68,8 @@ def pickel_load(file_path:str):
                 return file_data
     except Exception as e:
         raise e
+
+def load_env(env_file_path:str):
+    # load_check = load_dotenv(dotenv_path=env_file_path)
+    load_check = load_dotenv(dotenv_path=env_file_path if env_file_path else None)
+    return load_check
