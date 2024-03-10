@@ -1,8 +1,0 @@
-Metadata-Version: 2.1
-Name: MisterRetriveRite
-Version: 0.0.0
-Summary: A samll python package for RAG implimentation using langchain, Faiss, and streamlit for NLP applications
-Home-page: https://github.com/Palpendiculal/MisterRetriveRite
-Author: Palpendiculal
-Author-email: varuns.india@gmail.com
-Project-URL: Bug Tracker, https://github.com/Palpendiculal/MisterRetriveRite/issues

@@ -1,4 +1,0 @@
-.env
-artifacts/vector_db/faiss_Store_huggingface.pkl
-main.py
-logs/running_logs.log

@@ -19,6 +19,7 @@ class ConfigurationManager:
 
         vectorizationConfig = VectorizationConfig(
             root_dir = config.root_dir,
+            db_path=config.db_path,
             encoder_name = config.encoder_name,
             model_ckpt = config.model_ckpt,
             data_path = config.data_path,
