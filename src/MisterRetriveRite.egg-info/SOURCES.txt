@@ -6,6 +6,9 @@ src/MisterRetriveRite.egg-info/dependency_links.txt
 src/MisterRetriveRite.egg-info/top_level.txt
 src/misterRetriveRite/__init__.py
 src/misterRetriveRite/components/__init__.py
+src/misterRetriveRite/components/data_loader.py
+src/misterRetriveRite/components/data_splitter.py
+src/misterRetriveRite/components/vector_indexing.py
 src/misterRetriveRite/config/__init__.py
 src/misterRetriveRite/config/configurations.py
 src/misterRetriveRite/constants/__init__.py

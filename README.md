@@ -14,7 +14,6 @@ Mr. RetrieveRite is a tool based on RAG (Retrieval Augmented Generation), design
   * [Future Plans](#future-plans)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Demo](#demo)
 * [Configuration](#configuration)
 * [Model and Data](#model-and-data)
 * [API Keys and Credentials](#api-keys-and-credentials)
@@ -53,17 +52,39 @@ Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by in
 + Retrieval and prompt : Retrieve the relevant chunks from the DB store and formulate an LLM prompt. Used RetrievalQAWithSourcesChain class and OpenAI API.
 
 ### Project Status
-+ Phase 1 : Currently the project works as a prototype and has the foundational structure to expand on its capabilities to deal with large information database.
++ Phase 1 : Currently the project works as a prototype. You can copy paste three urls from the internet and ask questions. The project has the foundational structure to expand on its capabilities to deal with large information database.
 
 ### Future Scope
++ Host the app on a server
 + Make it more application specific and build different products out of it.
 + Make the data-ingestion system more robust
-+ Include a more robust and capable Vector DB  
++ Include a more robust and capable Vector DB 
 
 ## Installation
+> ** Python 3.9**
 1. Clone this repository to your local machine using:
     ```bash
     $ git clone https://github.com/Palpendiculal/MisterRetriveRite.git
     $ cd your_project
     ```
-2. 
+2. Create a conda environment and install dependencies
+    ''''bash
+    $ pip install -r requirements.txt
+    ''''
+
+## Usage
+1. Update the .env file with your API key
+2. To run the app copy the following command in your terminal:
+    '''bash
+    $ streamlit run app.py
+    '''
+3. Copy paste urls from the internet and ask questions.
+
+## API Keys and Credentials
+To generate an API key go to [OpenAI website](https://openai.com/blog/openai-api). Generate the key and update your .env
+
+## Contributing
+Coming soon..
+
+## Contact
+[LinkedIn] (https://www.linkedin.com/in/varun-kumar-singh-b01083148/)

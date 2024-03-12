@@ -70,7 +70,6 @@ if st.session_state.url_processing:
         # 3 Data Vectorization
         if True :#splits_rec:
             vectorizer = Vectorizer(data_splits=splits_rec)
-            print("here")
             vector_index_huggingface = vectorizer.build_vectorindex_with_faiss_and_huggingface(model_name=vectorization_config.encoder_name, 
                                                                                             save_to_local=True,
                                                                                             file_dir=vectorization_config.root_dir,

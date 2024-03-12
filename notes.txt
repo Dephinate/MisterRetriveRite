@@ -1,0 +1,3 @@
+https://www.lettria.com/blogpost/retrieval-augmented-generation-5-uses-and-their-examples
+https://colabdoge.medium.com/what-is-rag-retrieval-augmented-generation-b0afc5dd5e79
+https://www.hopsworks.ai/dictionary/vector-database
