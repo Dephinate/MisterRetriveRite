@@ -68,16 +68,16 @@ Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by in
     $ cd your_project
     ```
 2. Create a conda environment and install dependencies
-    '''bash
+    ```bash
     $ pip install -r requirements.txt
-    ''''
+    ```
 
 ## Usage
 1. Update the .env file with your API key
 2. To run the app copy the following command in your terminal:
-    '''bash
+    ```bash
     $ streamlit run app.py
-    '''
+    ```
 3. Copy paste urls from the internet and ask questions.
 
 ## API Keys and Credentials
