@@ -6,7 +6,7 @@ Mr. RetrieveRite is a tool based on RAG (Retrieval Augmented Generation), design
 
 - [Overview](#overview)
   - [Brief Description](#brief-description)
-  - [Why ?](#unique-selling-points)
+  - [Why ?](#why?)
   - [Technologies Used](#technologies-used)
   - [Target Audience](#target-audience)
   - [Project Status](#project-status)
@@ -27,5 +27,19 @@ Mr. RetrieveRite is a tool based on RAG (Retrieval Augmented Generation), design
 
 Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by incorporating external knowledge sources, enabling more informed responses beyond the model's training data. It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts all without the need to retrain the model.
 
-## Why ?
-+ **Cost-effective implementation :** ajajaj
+### Why ?
++ **Challenges to LLMs :** Making things up when it does not have the answer; presenting ou-of-date or generic information. 
++ **Cost-effective implementation :** The computational and financial costs of retraining base models for organization or domain-specific information are high. Aditionally APIs charge for processing tokens. Giving only relevant input to generate a response can be cost efficient.
++ **Current information :** LLMs are trained on a data upto a specific date. RAG allows developers to provide the latest research, statistics, or news to the generative models while maintaining relevancy.
++ **Enhanced user trus :** RAG can provide source attribution. The output includes refrences to sources so the user may cross check.
+
+### Technologies used :**
++ Langchain, OpenAI API, Hugging Face, Streamlit, FAISS
++ For this project Langchain and OpenAI API is used for processing data and giving prompts; Hugging Face's transformer model is used to create embeddings; Faiss is used for retrieval; and Streamlit is used to design UI.
+
+### Target Audience :**
++ Customer Service Industry
++ Advertising and Marketing
++ Education and E-Learning
++ Healthcare Industry
++ E-commerce and Retail Industry
