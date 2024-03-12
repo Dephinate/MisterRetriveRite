@@ -68,7 +68,7 @@ Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by in
     $ cd your_project
     ```
 2. Create a conda environment and install dependencies
-    ''''bash
+    '''bash
     $ pip install -r requirements.txt
     ''''
 
