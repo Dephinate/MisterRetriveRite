@@ -47,3 +47,23 @@ Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by in
 + E-commerce and Retail Industry
 
 ### Technical Architecture
++ Data Ingestion : Used Langchain's UnstructuredURLLoader class to load data from urls.
++ Split data into chunks : Used langchain's RecursiveCharacterTextSplitter class.
++ Vector DB : Vectorized the chunks using HuggingFaceBgeEmbeddings, create a FAISS vector store using the embeddings and the splits .
++ Retrieval and prompt : Retrieve the relevant chunks from the DB store and formulate an LLM prompt. Used RetrievalQAWithSourcesChain class and OpenAI API.
+
+### Project Status
++ Phase 1 : Currently the project works as a prototype and has the foundational structure to expand on its capabilities to deal with large information database.
+
+### Future Scope
++ Make it more application specific and build different products out of it.
++ Make the data-ingestion system more robust
++ Include a more robust and capable Vector DB  
+
+## Installation
+1. Clone this repository to your local machine using:
+    ```bash
+    $ git clone https://github.com/Palpendiculal/MisterRetriveRite.git
+    $ cd your_project
+    ```
+2. 
