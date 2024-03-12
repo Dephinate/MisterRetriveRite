@@ -6,7 +6,7 @@ Mr. RetrieveRite is a tool based on RAG (Retrieval Augmented Generation), design
 
 * [Overview](#overview)
   * [Brief Description](#brief-description)
-  * [Why?](#why?)
+  * [Why?](#why)
   * [Technologies Used](#technologies-used)
   * [Target Audience](#target-audience)
   * [Technical Architecture](#technical-rchitecture)
