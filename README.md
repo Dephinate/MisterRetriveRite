@@ -4,23 +4,24 @@ Mr. RetrieveRite is a tool based on RAG (Retrieval Augmented Generation), design
 
 ## Table of Contents
 
-- [Overview](#overview)
-  - [Brief Description](#brief-description)
-  - [Why ?](#why?)
-  - [Technologies Used](#technologies-used)
-  - [Target Audience](#target-audience)
-  - [Project Status](#project-status)
-  - [Future Plans](#future-plans)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Demo](#demo)
-- [Configuration](#configuration)
-- [Model and Data](#model-and-data)
-- [API Keys and Credentials](#api-keys-and-credentials)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
+* [Overview](#overview)
+  * [Brief Description](#brief-description)
+  * [Why ?](#why?)
+  * [Technologies Used](#technologies-used)
+  * [Target Audience](#target-audience)
+  * [Technical Architecture](#technical-rchitecture)
+  * [Project Status](#project-status)
+  * [Future Plans](#future-plans)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Demo](#demo)
+* [Configuration](#configuration)
+* [Model and Data](#model-and-data)
+* [API Keys and Credentials](#api-keys-and-credentials)
+* [Contributing](#contributing)
+* [License](#license)
+* [Acknowledgments](#acknowledgments)
+* [Contact](#contact)
 
 
 ## Overview
@@ -33,13 +34,15 @@ Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by in
 + **Current information :** LLMs are trained on a data upto a specific date. RAG allows developers to provide the latest research, statistics, or news to the generative models while maintaining relevancy.
 + **Enhanced user trus :** RAG can provide source attribution. The output includes refrences to sources so the user may cross check.
 
-### Technologies used :**
+### Technologies used :
 + Langchain, OpenAI API, Hugging Face, Streamlit, FAISS
 + For this project Langchain and OpenAI API is used for processing data and giving prompts; Hugging Face's transformer model is used to create embeddings; Faiss is used for retrieval; and Streamlit is used to design UI.
 
-### Target Audience :**
+### Target Audience :
 + Customer Service Industry
 + Advertising and Marketing
 + Education and E-Learning
 + Healthcare Industry
 + E-commerce and Retail Industry
+
+### Technical Architecture
