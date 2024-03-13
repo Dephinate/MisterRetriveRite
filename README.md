@@ -25,7 +25,7 @@ Mr. RetrieveRite is a tool based on RAG (Retrieval Augmented Generation), design
 ### Brief Description
 
 Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by incorporating external knowledge sources, enabling more informed responses beyond the model's training data. It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts all without the need to retrain the model.
-![Preview](preview.mp4)
+[![Watch the video](preview.jpeg)](preview.mp4)
 
 ### Why?
 + **Challenges to LLMs :** Making things up when it does not have the answer; presenting ou-of-date or generic information. 
