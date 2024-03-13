@@ -27,7 +27,7 @@ load_env("")
 config = ConfigurationManager()
 vectorization_config = config.get_vectorization_config()
 model_config = config.get_model_config()
-llm = OpenAI(model=model_config.model_name,temperature=model_config.temperature, max_tokens=model_config.max_tokens)
+llm = OpenAI(model=model_config.model_name,temperature=model_config.temperature, max_tokens=model_config.max_tokens, batch_size=2)
 ## Configurations Ends here
 
 ## Layout
@@ -36,6 +36,7 @@ st.markdown("How can I help you today ?")
 st.sidebar.title("Paste your URLs Here")
 main_placeholder = st.empty()
 query = main_placeholder.text_input("Query ................. :mag: ")
+print(query)
 
 # url inputs
 url_1 = st.sidebar.text_input(label="URL 1")
@@ -88,24 +89,25 @@ if st.session_state.url_processing:
 ## Process URLs Ends here
 
 # # Query
-if query and st.session_state.url_processed :
-    vector_index_huggingface_load = pickel_load(os.path.join(vectorization_config.db_path,"faiss_Store_huggingface.pkl"))
-      
-    chain = RetrievalQAWithSourcesChain.from_llm(llm=llm, retriever=vector_index_huggingface_load.as_retriever())
-    result = chain({"question": query}, return_only_outputs=True)
-    # result will be a dictionary of this format --> {"answer": "", "sources": [] }
-    st.text_area("Answer",result["answer"])
+if query :
+    if st.session_state.url_processed :
+        vector_index_huggingface_load = pickel_load(os.path.join(vectorization_config.db_path,"faiss_Store_huggingface.pkl"))
+        
+        chain = RetrievalQAWithSourcesChain.from_llm(llm=llm, retriever=vector_index_huggingface_load.as_retriever())
+        result = chain({"question": query}, return_only_outputs=True)
+        # result will be a dictionary of this format --> {"answer": "", "sources": [] }
+        st.text_area("Answer",result["answer"])
 
-    # Display sources, if available
-    sources = result.get("sources", "")
-    if sources:
-        st.subheader("Sources:")
-        sources_list = sources.split("\n")  # Split the sources by newline
-        for source in sources_list:
-            st.write(source)
+        # Display sources, if available
+        sources = result.get("sources", "")
+        if sources:
+            st.subheader("Sources:")
+            sources_list = sources.split("\n")  # Split the sources by newline
+            for source in sources_list:
+                st.write(source)
 
-else:
-    st.markdown(":red[Please upload and process URLs first.]")
+    else:
+        st.markdown(":red[Please upload and process URLs first.]")
 # # Query Ends Here
 
 

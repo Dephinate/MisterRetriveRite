@@ -14,11 +14,9 @@ Mr. RetrieveRite is a tool based on RAG (Retrieval Augmented Generation), design
   * [Future Plans](#future-plans)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Configuration](#configuration)
 * [Model and Data](#model-and-data)
 * [API Keys and Credentials](#api-keys-and-credentials)
 * [Contributing](#contributing)
-* [License](#license)
 * [Acknowledgments](#acknowledgments)
 * [Contact](#contact)
 
@@ -34,11 +32,11 @@ Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by in
 + **Current information :** LLMs are trained on a data upto a specific date. RAG allows developers to provide the latest research, statistics, or news to the generative models while maintaining relevancy.
 + **Enhanced user trus :** RAG can provide source attribution. The output includes refrences to sources so the user may cross check.
 
-### Technologies used :
+### Technologies used
 + Langchain, OpenAI API, Hugging Face, Streamlit, FAISS
 + For this project Langchain and OpenAI API is used for processing data and giving prompts; Hugging Face's transformer model is used to create embeddings; Faiss is used for retrieval; and Streamlit is used to design UI.
 
-### Target Audience :
+### Target Audience
 + Customer Service Industry
 + Advertising and Marketing
 + Education and E-Learning
@@ -46,6 +44,7 @@ Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by in
 + E-commerce and Retail Industry
 
 ### Technical Architecture
+![Technical Architecture](technical_architecture.jpg)
 + Data Ingestion : Used Langchain's UnstructuredURLLoader class to load data from urls.
 + Split data into chunks : Used langchain's RecursiveCharacterTextSplitter class.
 + Vector DB : Vectorized the chunks using HuggingFaceBgeEmbeddings, create a FAISS vector store using the embeddings and the splits .
@@ -80,11 +79,20 @@ Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by in
     ```
 3. Copy paste urls from the internet and ask questions.
 
+## Model and Data
+For embeddings used all-mpnet-base-v2 from Huggingface. For prompts used  gpt-3.5-turbo-instruct from OpenAI
+
 ## API Keys and Credentials
 To generate an API key go to [OpenAI website](https://openai.com/blog/openai-api). Generate the key and update your .env
 
 ## Contributing
 Coming soon..
+
+## Acknowledgments
+https://www.lettria.com/blogpost/retrieval-augmented-generation-5-uses-and-their-examples
+https://colabdoge.medium.com/what-is-rag-retrieval-augmented-generation-b0afc5dd5e79
+https://www.hopsworks.ai/dictionary/vector-database
+https://codebasics.io/
 
 ## Contact
 [LinkedIn] (https://www.linkedin.com/in/varun-kumar-singh-b01083148/)

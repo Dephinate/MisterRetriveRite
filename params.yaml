@@ -1,6 +1,6 @@
 SplitterArguments: 
   chunk_size: 2000
-  chunk_overlap: 100
+  chunk_overlap: 150
 
 
 #
@@ -8,7 +8,7 @@ SplitterArguments:
 # max_tokens: defines the maximum number of tokens to be generated WRT a prompt
 ModelArguments:
   temperature: 0.9
-  max_tokens: 500 
+  max_tokens: 1000 
 
 Vector_dbArguments:
   k: None
