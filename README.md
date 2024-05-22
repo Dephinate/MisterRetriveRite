@@ -88,7 +88,7 @@ For embeddings used all-mpnet-base-v2 from Huggingface. For prompts used  gpt-3.
 To generate an API key go to [OpenAI website](https://openai.com/blog/openai-api). Generate the key and update your .env
 
 ## Contributing
-Coming soon..
+To contribute feel free to fork the repo. Please do not hesitate to contact me on LinkedIn
 
 ## Acknowledgments
 https://www.lettria.com/blogpost/retrieval-augmented-generation-5-uses-and-their-examples
