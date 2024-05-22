@@ -26,7 +26,7 @@ Mr. RetrieveRite is a tool based on RAG (Retrieval Augmented Generation), design
 
 Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by incorporating external knowledge sources, enabling more informed responses beyond the model's training data. It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts all without the need to retrain the model.
 
-![Watch the video](preview.gif)
+![Watch the video](data/preview.gif)
 
 ### Why?
 + **Challenges to LLMs :** Making things up when it does not have the answer; presenting ou-of-date or generic information. 
@@ -46,7 +46,7 @@ Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by in
 + E-commerce and Retail Industry
 
 ### Technical Architecture
-![Technical Architecture](technical_architecture.jpg)
+![Technical Architecture](data/technical_architecture.jpg)
 + Data Ingestion : Used Langchain's UnstructuredURLLoader class to load data from urls.
 + Split data into chunks : Used langchain's RecursiveCharacterTextSplitter class.
 + Vector DB : Vectorized the chunks using HuggingFaceBgeEmbeddings, create a FAISS vector store using the embeddings and the splits .
@@ -98,3 +98,8 @@ https://codebasics.io/
 
 ## Contact
 [LinkedIn] (https://www.linkedin.com/in/varun-kumar-singh-b01083148/)
+
+
+git config --global user.name "Dephinate"
+git config --global user.email "varuns.india@gmail.com"
+
